@@ -10,7 +10,7 @@ const ArticleSection = () => {
       title: "Athens: Explore the Majestic Acropolis",
       description:
         "Discover the ancient ruins of the Acropolis, home to iconic landmarks like the Parthenon. Experience the rich history and stunning views of Athens from this timeless hilltop site.",
-      image: "/assets/images/acropolis.jpg",
+      image: "./assets/images/acropolis.jpg",
       link: "./acropolisArticle",
     },
     {
@@ -18,7 +18,7 @@ const ArticleSection = () => {
       title: "Athens: Unveiling the Wonders of the Athenian Museum",
       description:
         "Step inside the Athenian Museum to explore ancient Greek artifacts, sculptures, and masterpieces. A must-visit for those fascinated by Greece’s rich cultural heritage.",
-      image: "/assets/images/athenmuseum.jpg",
+      image: "./assets/images/athenmuseum.jpg",
       link: "/articles/athenmuseum",
     },
     {
@@ -26,7 +26,7 @@ const ArticleSection = () => {
       title: "Sounion: The Temple of Poseidon at Cape Sounion",
       description:
         "Visit the Temple of Poseidon at Cape Sounion, offering stunning views of the Aegean Sea. Learn about its ancient significance and rich mythology in Greek culture.",
-      image: "/assets/images/templeofposeidon.jpg",
+      image: "./assets/images/templeofposeidon.jpg",
       link: "/articles/poseidon-temple",
     },
     {
@@ -34,7 +34,7 @@ const ArticleSection = () => {
       title: "Delphi: The Oracle’s Sacred Sanctuary",
       description:
         "Journey to Delphi, home of the famous Oracle of Apollo. Walk through the ancient ruins where prophecies shaped the course of Greek history.",
-      image: "/assets/images/delphi.jpg",
+      image: "./assets/images/delphi.jpg",
       link: "/articles/delphi-oracle",
     },
     {
@@ -42,7 +42,7 @@ const ArticleSection = () => {
       title: "Olympia: Birthplace of the Olympic Games",
       description:
         "Explore Olympia, the site of the original Olympic Games. Witness the remains of ancient stadiums, temples, and the legendary statue of Zeus.",
-      image: "/assets/images/olympia.jpg",
+      image: "./assets/images/olympia.jpg",
       link: "/articles/olympia-history",
     },
     {
@@ -50,7 +50,7 @@ const ArticleSection = () => {
       title: "Rhodes: The Island of the Colossus",
       description:
         "Discover the medieval streets of Rhodes and learn about the legendary Colossus, one of the Seven Wonders of the Ancient World.",
-      image: "/assets/images/rhodes.jpg",
+      image: "./assets/images/rhodes.jpg",
       link: "/articles/rhodes-colossus",
     },
   ];
