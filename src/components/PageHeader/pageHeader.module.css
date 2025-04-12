@@ -2,10 +2,12 @@
 .aboutHeaderMainContainer,
 .travelHeaderMainContainer,
 .greeceHeaderMainContainer {
-  position: relative; /* Establish stacking context */
-  height: 95vh;
-  background-size: cover;
+  position: relative;
+  height: 100vh; /* Ensure the container takes full height of the viewport */
+  width: 100%; /* Ensure the container takes full width */
+  background-size: cover; /* Cover the entire container */
   background-position: center;
+  background-repeat: no-repeat; /* Prevent repetition */
   color: white;
   display: flex;
   justify-content: center;
@@ -15,10 +17,8 @@
   z-index: 0; /* Ensure the container is at the base level */
 }
 
-.homeHeaderMainContainer::before,
-.aboutHeaderMainContainer::before,
-.travelHeaderMainContainer::before,
-.greeceHeaderMainContainer::before {
+
+.aboutHeaderMainContainer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -31,6 +31,19 @@
     rgba(53, 36, 66, 0.3) 50%,
     rgba(53, 36, 66, 0) 100%
   );
+  pointer-events: none;
+}
+.homeHeaderMainContainer::before,
+.aboutHeaderMainContainer::before,
+.travelHeaderMainContainer::before,
+.greeceHeaderMainContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+
   pointer-events: none;
 }
 

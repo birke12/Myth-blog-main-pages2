@@ -41,7 +41,10 @@ const PageHeader = ({ title, subTitle, headerType }) => {
           : styles.contactPageHeader
       }
       style={{
-        backgroundImage: headerImage ? `url(${headerImage})` : 'none', // Use dynamic background image
+        backgroundImage: headerImage ? `url(${headerImage})` : "none", // Use dynamic background image
+        backgroundRepeat: "no-repeat", // Prevent the background image from repeating
+        backgroundSize: "cover", // Ensure the background covers the entire container
+        backgroundPosition: "center", // Ensure the background is centered
       }}
     >
       <div
