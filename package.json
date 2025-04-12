@@ -1,6 +1,5 @@
 {
-  "homepage": "https://birke12.github.io/Myth-blog-main-pages2",
-"name": "myth-blog",
+  "name": "myth-blog",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "react": "^18.3.1",
