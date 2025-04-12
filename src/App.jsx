@@ -15,7 +15,7 @@ import TravelTips from "./pages/travelTips/TravelTips.jsx";
 
 function App() {
   const routes = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "./", element: <Home /> },
     { path: "/acropolisArticle", element: <AcropolisArticle /> },
     { path: "/aboutUs", element: <AboutUs /> },
     { path: "/contact", element: <Contact /> },
