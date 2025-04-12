@@ -1,0 +1,159 @@
+
+
+.mostViewedArticle {
+  text-align: center;
+  margin-top: 40px;
+  align-items: center;
+}
+
+
+
+.titleWithLines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0.7px;
+  background-color: #c5c5c5;
+  margin: 0 50px; /* Adds spacing */
+}
+
+.mostViewedArticle h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mostViewedArticle h2::before,
+.mostViewedArticle h2::after {
+  content: "";
+  flex: 0.5; /* Make the lines fill available space */
+  height: 2px;
+  background-color: #333; /* Adjust color */
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .mostViewedArticle {
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+  }
+}
+
+.test{
+    height: 1000px;
+    background-color: aqua;
+}
+
+.articleGridContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 20px;
+  /* background-color: #f5f5f5; */
+  margin-top: 50px;
+}
+
+.articleTitle {
+      font-size: 3rem;
+  /* margin-bottom: 0.8rem; */
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two articles per row */
+  gap: 40px; /* Space between articles */
+  max-width: 800px; /* Limit width for readability */
+  width: 100%;
+}
+
+/* Article Card Layout */
+.articleCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  background: white;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Fade-in Effect */
+.articleCard.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image Section */
+.imageWrapper {
+  flex: 1;
+  max-width: 250px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.articleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Text Section */
+.articleContent {
+  flex: 2;
+  text-align: left;
+}
+
+.articleContent h3 {
+  font-size: 1.5rem;
+  font-family: "Cinzel", serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.articleContent p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .articleGrid {
+    grid-template-columns: 1fr; /* Stack in one column */
+  }
+
+  .articleCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageWrapper {
+    max-width: 100%;
+    height: 220px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+body {
+  font-size: 18px;
+  /* font-family: "Quicksand", serif; */
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.mostViewedArticle {
+  text-align: center;
+  margin-top: 40px;
+  align-items: center;
+}
+
+
+
+.titleWithLines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0.7px;
+  background-color: #c5c5c5;
+  margin: 0 50px; /* Adds spacing */
+}
+
+.mostViewedArticle h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mostViewedArticle h2::before,
+.mostViewedArticle h2::after {
+  content: "";
+  flex: 0.5; /* Make the lines fill available space */
+  height: 2px;
+  background-color: #333; /* Adjust color */
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .mostViewedArticle {
+    text-align: center;
+    margin-top: 40px;
+    align-items: center;
+  }
+}

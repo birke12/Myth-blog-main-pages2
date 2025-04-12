@@ -1,0 +1,85 @@
+
+.linksMainSection {
+display: flex;
+max-width: 1600px;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+margin-bottom: 80px;
+
+}
+
+.linksImage {
+    max-height: 100px;
+
+}
+.linksImageExpedia {
+    max-height: 60px;
+
+}
+.linksImageBooking {
+    max-height: 50px;
+    margin-top: 16px;
+
+}
+.linksImageSaftywing {
+    max-height: 60px;
+
+}
+
+.linksContainer {
+   margin: 30px;
+
+}
+
+.linksText {
+   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    .linksText {
+       
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-style: italic;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .linksMainSection {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-bottom: 80px;
+    }
+    .linksContainer {
+       margin-left: 30px;
+       margin-right: 30px;
+       margin: 0 auto;
+       margin-bottom: 10px;
+    
+    }
+    .linksImage {
+        max-height: 80px;
+        margin-left: 40px;
+        margin-top: -10px;
+        
+    }
+    .linksImageExpedia {
+        max-height: 40px;
+        
+    }
+    .linksImageBooking {
+        max-height: 30px;
+        margin-top: 0px;
+        
+}
+.linksImageSaftywing {
+    max-height: 50px;
+
+}
+}

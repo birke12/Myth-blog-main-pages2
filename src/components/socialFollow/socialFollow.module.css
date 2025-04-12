@@ -1,0 +1,33 @@
+.socialFollowContainer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.socialTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(126, 126, 126);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: rgb(126, 126, 126);
+}
+
+.socialIcon {
+  font-size: 30px;
+  color: rgb(126, 126, 126);
+  transition: color 0.3s;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.socialIcon:hover {
+  color: #eccf90;
+}

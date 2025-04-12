@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Athens: Explore the Majestic Acropolis",
+    "description": "Discover the ancient ruins of the Acropolis, home to iconic landmarks like the Parthenon. Experience the rich history and stunning views of Athens from this timeless hilltop site.",
+    "image": "../assets/images/acropolis.jpg",
+    "link": "/articles/acropolis"
+  },
+  {
+    "id": 2,
+    "title": "Delphi: The Oracle’s Sacred Ground",
+    "description": "Visit the legendary Temple of Apollo in Delphi, where the Oracle once spoke prophecies. Explore the mystical ruins set against a breathtaking mountainous landscape.",
+    "image": "/assets/images/delphi.jpg",
+    "link": "/articles/delphi"
+  },
+  {
+    "id": 3,
+    "title": "Olympia: Birthplace of the Olympic Games",
+    "description": "Step into the ancient world of Olympia, home to the original Olympic Games and the massive Temple of Zeus. Experience history where athletes once competed for glory.",
+    "image": "/assets/images/olympia.jpg",
+    "link": "/articles/olympia"
+  },
+  {
+    "id": 4,
+    "title": "Mycenae: The Kingdom of Agamemnon",
+    "description": "Explore the ruins of Mycenae, the legendary city of King Agamemnon. Walk through the Lion's Gate and visit ancient tombs that tell stories of heroes and war.",
+    "image": "/assets/images/mycenae.jpg",
+    "link": "/articles/mycenae"
+  },
+  {
+    "id": 5,
+    "title": "Knossos: The Labyrinth of the Minotaur",
+    "description": "Uncover the mystery of the Minoan civilization at Knossos, home to the legendary Labyrinth and King Minos. Walk through the ancient palace filled with vibrant frescoes.",
+    "image": "/assets/images/knossos.jpg",
+    "link": "/articles/knossos"
+  },
+  {
+    "id": 6,
+    "title": "Corinth: A City of Gods and Heroes",
+    "description": "Visit ancient Corinth, where mythology meets history. Explore the Temple of Apollo and climb Acrocorinth, a fortress once dedicated to the goddess Aphrodite.",
+    "image": "/assets/images/corinth.jpg",
+    "link": "/articles/corinth"
+  },
+  {
+    "id": 7,
+    "title": "Cape Sounion: The Temple of Poseidon",
+    "description": "Watch the sunset at the Temple of Poseidon, standing majestically over the Aegean Sea. A must-visit site for history lovers and mythology enthusiasts.",
+    "image": "/assets/images/poseidon.jpg",
+    "link": "/articles/poseidon"
+  },
+  {
+    "id": 8,
+    "title": "Delos: Birthplace of Apollo and Artemis",
+    "description": "Sail to Delos, the mythical birthplace of the twin gods Apollo and Artemis. Discover ancient temples and sacred sites on this UNESCO-listed island.",
+    "image": "/assets/images/delos.jpg",
+    "link": "/articles/delos"
+  },
+  {
+    "id": 9,
+    "title": "Rhodes: The Island of the Colossus",
+    "description": "Explore the medieval and ancient wonders of Rhodes, once home to the Colossus, one of the Seven Wonders of the Ancient World.",
+    "image": "/assets/images/rhodes.jpg",
+    "link": "/articles/rhodes"
+  },
+  {
+    "id": 10,
+    "title": "Meteora: Monasteries in the Sky",
+    "description": "Marvel at the breathtaking rock formations of Meteora, where monasteries sit atop towering cliffs. A place where history, faith, and mythology intertwine.",
+    "image": "/assets/images/meteora.jpg",
+    "link": "/articles/meteora"
+  }
+]
