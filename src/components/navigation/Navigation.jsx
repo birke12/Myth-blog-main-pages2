@@ -19,7 +19,7 @@ const Navigation = () => {
 
   return (
     <nav className="navbar">
-      <a href="/">
+      <a href="./">
         {/*  <img
           className="logo1"
           src="/assets/logo/placeholdeLogo.png"
