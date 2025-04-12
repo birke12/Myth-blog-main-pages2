@@ -1,21 +1,48 @@
+import React from "react";
 import styles from "./pageHeader.module.css";
 
-const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
+// Importing images
+import homeImage from "../../assets/images/NightView.png";
+import aboutUsImage from "../../assets/images/Background-greek-myth.png";
+import travelTipsImage from "../../assets/images/pyramid.png";
+import greeceImage from "../../assets/images/GreeceBg.png";
+
+const PageHeader = ({ title, subTitle, headerType }) => {
+  // Select the appropriate image based on headerType
+  const getHeaderImage = () => {
+    switch (headerType) {
+      case "home":
+        return homeImage;
+      case "aboutUs":
+        return aboutUsImage;
+      case "travelTips":
+        return travelTipsImage;
+      case "greece":
+        return greeceImage;
+      default:
+        return null; // Return null or a default image if needed
+    }
+  };
+
+  // Get the background image
+  const headerImage = getHeaderImage();
+
   return (
     <header
-      /* className={`${styles.header} ${header2 || ""}`} */
       className={
         headerType === "home"
-          ? "homePageHeader"
+          ? styles.homePageHeader
           : headerType === "aboutUs"
-          ? "aboutUsPageHeader"
+          ? styles.aboutUsPageHeader
           : headerType === "travelTips"
-          ? "traveltipsPageHeader"
+          ? styles.traveltipsPageHeader
           : headerType === "greece"
-          ? "greecePageHeader"
-          : "contactPageHeader"
+          ? styles.greecePageHeader
+          : styles.contactPageHeader
       }
-      /* style={{ backgroundImage: `url(${headerImg})` }} */
+      style={{
+        backgroundImage: headerImage ? `url(${headerImage})` : 'none', // Use dynamic background image
+      }}
     >
       <div
         className={`${styles.headerMainContainer} ${
@@ -30,42 +57,18 @@ const PageHeader = ({ title, subTitle, headerImg, headerType }) => {
             : styles.defaultHeaderMainContainer
         }`}
       >
-        {headerType === "home" && (
-          <>
-            <div className={styles.headerContainer}>
-              <h1 className={styles.title}>{title}</h1>
-
-              <h3 className={styles.subTitle}>{subTitle}</h3>
-            </div>
-          </>
-        )}
-        {headerType === "travelTips" && (
-          <>
-            <div className={styles.headerContainer}>
-              <h1 className={styles.title}>{title}</h1>
-
-              <h3 className={styles.subTitle}>{subTitle}</h3>
-            </div>
-          </>
-        )}
-        {headerType === "aboutUs" && (
-          <>
-            <div className={styles.aboutHeaderContainer}>
-              <h1 className={styles.title}>{title}</h1>
-
-              <h3 className={styles.subTitle}>{subTitle}</h3>
-            </div>
-          </>
-        )}
-        {headerType === "greece" && (
-          <>
-            <div className={styles.greeceHeaderContainer}>
-              <h1 className={styles.title}>{title}</h1>
-
-              <h3 className={styles.subTitle}>{subTitle}</h3>
-            </div>
-          </>
-        )}
+        <div
+          className={
+            headerType === "aboutUs"
+              ? styles.aboutHeaderContainer
+              : headerType === "greece"
+              ? styles.greeceHeaderContainer
+              : styles.headerContainer
+          }
+        >
+          <h1 className={styles.title}>{title}</h1>
+          <h3 className={styles.subTitle}>{subTitle}</h3>
+        </div>
       </div>
     </header>
   );
