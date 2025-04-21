@@ -1,18 +1,19 @@
 import Newsletter from "../../components/newsletter/Newsletter";
 import styles from "./arcropolisArticle.module.css";
 
-const Acropolis = ({ articleText }) => {
+// Import images
+import acropolisImg from "/public/assets/images/acropolis.jpg";
+import acropolisMuseumImg from "/public/assets/images/acropolisMuseum.jpg";
 
-  
+const Acropolis = ({ articleText }) => {
   return (
     <article className={styles.introductionContainer}>
       <div className={styles.innerContainer}>
-        {/* Image in the top-right corner */}
         <h1 className={styles.heading}>Sightseeing at the Acropolis</h1>
-        {/* Text Content */}
+
         <p className={styles.text}>
           <img
-            src="../public/assets//images/acropolis.jpg"
+            src={acropolisImg}
             alt="Acropolis"
             className={styles.image}
           />
@@ -25,6 +26,7 @@ const Acropolis = ({ articleText }) => {
           symbol of the spirit, culture, and intellect that shaped Western
           civilization.
         </p>
+
         <p className={styles.text}>
           As you approach the Acropolis, the sight of the Parthenon, the most
           famous of its temples, rises majestically before you. Dedicated to the
@@ -34,6 +36,7 @@ const Acropolis = ({ articleText }) => {
           wear, evoke the enduring beauty of ancient Greek design and
           craftsmanship.
         </p>
+
         <p className={styles.text}>
           Alongside the Parthenon, the Acropolis is home to a series of other
           remarkable structures, including the Temple of Athena Nike, the
@@ -52,6 +55,7 @@ const Acropolis = ({ articleText }) => {
           Aegean Sea stretching out to the horizon, providing a stunning
           backdrop to the ancient ruins.
         </p>
+
         <p className={styles.text}>
           As you wander through the Acropolis complex, take time to reflect on
           the rich history that unfolded here. This sacred space was not only
@@ -61,9 +65,10 @@ const Acropolis = ({ articleText }) => {
           can almost hear the echoes of ancient debates and ideas that shaped
           the course of history.
         </p>
+
         <p className={styles.text}>
           <img
-            src="../public/assets//images/acropolisMuseum.jpg"
+            src={acropolisMuseumImg}
             alt="Acropolis Museum"
             className={styles.imageLeft}
           />
@@ -75,6 +80,7 @@ const Acropolis = ({ articleText }) => {
           appreciate the splendor of these ancient artworks in their full
           context.
         </p>
+
         <p className={styles.text}>
           Visiting the Acropolis is more than just a trip to an ancient
           site—it's a journey through time. The Acropolis represents the
@@ -83,6 +89,7 @@ const Acropolis = ({ articleText }) => {
           battles and triumphs, and of a civilization that laid the foundations
           for much of modern thought and democracy.
         </p>
+
         <p className={styles.text}>
           Whether you are a history buff, an architecture enthusiast, or simply
           someone seeking to experience the awe-inspiring beauty of one of the
@@ -90,6 +97,7 @@ const Acropolis = ({ articleText }) => {
           everyone. It’s a place where past and present converge, and where the
           spirit of ancient Greece continues to resonate through the centuries.
         </p>
+
         <p className={styles.text}>
           So, as you stand on the sacred hill of the Acropolis, take a moment to
           appreciate not only the physical beauty of the ruins but also the
@@ -97,13 +105,13 @@ const Acropolis = ({ articleText }) => {
           more than just sightseeing—this is a connection to the very roots of
           Western civilization.
         </p>
+
         <p className={styles.text}>
           The Acropolis is not just a monument; it is a living, breathing symbol
           of the ancient world. Every corner you turn, every stone you touch,
           holds a piece of history waiting to be discovered.
         </p>
       </div>
-      
     </article>
   );
 };
